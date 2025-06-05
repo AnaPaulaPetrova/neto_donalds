@@ -67,7 +67,7 @@ function confirmPayment(){
             }
     });
 }
-async function historic(){
+async function history(){
     const response = await fetch("http://localhost:8080/historico");
     const dataPay = await response.json();
 
