@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netodonalds</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img width="200px" src="./IMG/rect1757.png" alt="" />
+      <div class="iconContainer">
+        <div class="icon">🌮</div>
+        <h1>Bem vindo ao Netodonald's</h1>
+      </div>
+
+     <div class="historico">
+       <button onclick="history()" id="historico" >Historico</button>
+    </div>
+    </header>
+    <hr />
+    
+    <div class="container">
+        <div class="food-container">
+            Escolha o seu lanche:
+            <input onchange="getFood(1)" type="radio" id="tapioca" name="food" checked /> Tapioca
+            <input onchange="getFood(2)" type="radio" id="cuzcuz" name="food" /> Cuzcuz
+        </div>
+        <div class="buyer-container">
+             CPF do comprador: <input type="number" id="cpf" />
+        </div>
+    </div>
+
+    <div class="menu-container">
+          <div class="body-container">
+        <div class="fillings-container">
+            <h2>Escolha o seu Recheio </h2><br>
+            <div class="fillings">
+                <!-- <div><input type="checkbox"> Queijo (R$ 1,50)</div>
+                <div><input type="checkbox"> Presunto (R$ 0,50)</div>
+                <div><input type="checkbox"> Nutella (R$ 5,50)</div> -->
+            </div>
+        </div>
+         <div class="price-container">
+            <h2>Preço Total: R$ <span id="price"> 5,50</span> </h2>
+            <button onclick="confirmPayment()" id="pagar">Pagar</button>
+         </div>   
+     </div>
+    </div>
+    <div class="rodape">NETO DONALD`S LACHONETE LTDA - ME | CNPJ: 29.334.854/0001-29 | R Dr Comida da Boa, 395 - Jaguaruana/CE | contato@netodonald´s.com.br © Direitos reservados ao alunos de ADS Campus de Jaguaruana</div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

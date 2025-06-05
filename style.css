@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* body {
+    background-color: #faada5;
+} */
+header {
+    display: flex;
+    background-color: #cf2410;
+    background-image: url(./img/tapicoNut.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgb(254, 252, 252);
+    gap: 15px;
+    align-items: center;
+   
+}
+.food-container, .buyer-container {
+    font-weight: bolder;
+    font-size: 18px;
+    
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+} 
+.fillings {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.fillings-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex-basis: 50%;
+    color: #cf2410;
+    box-shadow: 1px 1px #cf2410;
+    border: solid 1px #cf2410;
+}
+input[type="radio"] {
+  width: 18px; /* Tamanho do botão */
+  height: 18px; /* Tamanho do botão */
+  border: 2px solid rgb(214, 66, 66); /* Cor da borda verde */
+  border-radius: 50%; /* Deixa o botão redondo */
+  background-color: white; /* Cor de fundo */
+  transition: all 0.3s ease; /* Transição suave */
+  appearance: none; /* Remove a aparência padrão do botão */
+  outline: none; /* Remove o contorno do botão */
+  cursor: pointer;
+}
+input[type="radio"]:checked {
+  background-color: rgb(209, 28, 28); /* Cor de fundo quando selecionado */
+  border-color: rgb(173, 201, 48); /* Cor da borda quando selecionado */
+}
+input[type="checkbox"] {
+  width: 18px; /* Tamanho do botão */
+  height: 18px; /* Tamanho do botão */
+  border: 2px solid rgb(214, 66, 66); /* Cor da borda verde */
+  border-radius: 20%; /* Deixa o botão redondo */
+  background-color: white; /* Cor de fundo */
+  transition: all 0.3s ease; /* Transição suave */
+  appearance: none; /* Remove a aparência padrão do botão */
+  outline: none; /* Remove o contorno do botão */
+  cursor: pointer;
+}
+input[type="checkbox"]:checked {
+  background-color: rgb(209, 28, 28); /* Cor de fundo quando selecionado */
+  border-color: rgb(173, 201, 48); /* Cor da borda quando selecionado */
+}
+.body-container {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+
+}
+.price-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    flex-basis: 50%;
+    color: #cf2410;
+    box-shadow: 1px 1px #cf2410;
+    border: solid 1px #cf2410;
+}
+span {
+    color: black;
+    font-weight: bold;
+}
+.historico {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+}
+#historico {
+    color: #cf2410;
+    background-color: white;
+    border-style: none;
+    padding: 5px;
+    font-size: 16px;
+    float: right;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#historico:hover{
+    color: white;
+    background-color: #edafa9;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+#pagar {
+    color: white;
+    background-color: #cf2410;
+    border-style: none;
+    padding: 5px;
+    font-size: 16px;
+    float: right;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#pagar:hover {
+    color: #cf2410;
+    background-color: rgb(240, 206, 206);
+    transform: scale(1.12);
+}
+#cpf {
+    border-radius: 5px;
+    padding: 5px;
+}
+.rodape {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #eee;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+}
+.iconContainer{
+    width: 100%;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+.icon {
+  font-size: 50px;
+  position: absolute;
+  left: 0;
+  top: 25px; /* centraliza verticalmente */
+  animation: rolar 8s linear infinite;
+}
+
+@keyframes rolar {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateX(100vw) rotate(360deg);
+  }
+}
